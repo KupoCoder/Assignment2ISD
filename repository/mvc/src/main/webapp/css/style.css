@@ -1,0 +1,146 @@
+:root {
+  --background-color: #f5f5f5;
+  --font-color: #333;
+  --secondary-color: #f1c40f;
+  --highlight-color: #3498db;
+  --link-color: #007BFF;
+}
+
+body {
+  background-color: var(--background-color);
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 80px 0 0 0;
+  line-height: 1.6; /* Improve readability */
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--highlight-color);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.topnav a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.topnav a:hover {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+}
+
+.contentcontainer {
+  max-width: 600px; /* Adjust this to your liking */
+  margin: auto; /* This will center the container if its width is less than that of its parent */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#underlineandcenter {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#center {
+  text-align: center;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  color: var(--highlight-color);
+  margin-bottom: 30px;
+}
+
+.form-error {
+  color: #dc3545;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: center; /* Center the label and elements inside the group */
+  width: 100%; /* Take full width of the parent container */
+  display: flex; /* Establish flex context for centering */
+  justify-content: center; /* Center children horizontally */
+  /* background-color: red; This line has been commented out */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 50%; /* Set the width of the input fields to 50% */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block; /* Make input fields block elements so they can be centered */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.button-inline {
+  margin-left: 10px;
+}
+
+.button-block {
+  width: 100%;
+  text-align: center; /* Center text on buttons */
+}
+
+.header {
+  background-color: var(--highlight-color);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Better spacing between navbar elements */
+  align-items: center;
+  padding: 0 10px; /* Padding on the sides for better appearance */
+}
+
+.navbar a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
